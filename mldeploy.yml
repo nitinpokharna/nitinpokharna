@@ -1,0 +1,17 @@
+---
+- name: CREATE ARM Deployment PLAYBOOK
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  vars:
+    # Variables 'resgrp' and 'location' need to be provided at command line with arg --extra-vars
+    templateLink: 'https://raw.githubusercontent.com/nitinpokharna/nitinpokharna/master/azuredeploy.json'
+   
+  tasks:
+  - name: Deploy ARM template
+    azure_rm_deployment:
+        state: present
+        resource_group_name: 'nitinmlwork'
+        # location seems to be not optional
+        location: 'Central US'
+        template_link: '{{ templateLink }}'
