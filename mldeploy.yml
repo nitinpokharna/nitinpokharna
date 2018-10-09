@@ -13,5 +13,5 @@
         state: present
         resource_group_name: 'nitinmlwork'
         # location seems to be not optional
-        location: 'Central US'
+        location: 'West Europe'
         template_link: '{{ templateLink }}'
