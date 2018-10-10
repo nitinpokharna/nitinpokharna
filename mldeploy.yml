@@ -6,7 +6,7 @@
   vars:
     # Variables 'resgrp' and 'location' need to be provided at command line with arg --extra-vars
     templateLink: 'https://raw.githubusercontent.com/nitinpokharna/nitinpokharna/master/azuredeploy.json'
-    ParamsLink: 'https://raw.githubusercontent.com/nitinpokharna/nitinpokharna/master/azuredeploy.parameters.json'
+    #ParamsLink: 'https://raw.githubusercontent.com/nitinpokharna/nitinpokharna/master/azuredeploy.parameters.json'
   tasks:
   - name: Deploy ARM template
     azure_rm_deployment:
@@ -15,4 +15,4 @@
         # location seems to be not optional
         location: 'West Europe'
         template_link: '{{ templateLink }}'
-        parameters_link: '{{ ParamsLink }}'
+        #parameters_link: '{{ ParamsLink }}'
