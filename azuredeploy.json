@@ -3,26 +3,21 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccounts_name": {
-            "defaultValue": "nitinmlworkstg",
             "type": "String"
         },
         "Workspaces_name": {
-            "defaultValue": "nitinworkspace",
             "type": "String"
         },
         "storageAccounts_name": {
-            "defaultValue": "nitinworkspacestorage",
             "type": "String"
         },
         "commitmentPlans_name": {
-            "defaultValue": "nitinworkspacePlan",
             "type": "String"
         }
     },
     "variables": {},
     "resources": [
         {
-            "comments": "Generalized from resource: '/subscriptions/c9fdb47f-e082-46f5-9266-3305f720b4b2/resourceGroups/nitinmlwork/providers/Microsoft.MachineLearning/commitmentPlans/nitinworkspacePlan'.",
             "type": "Microsoft.MachineLearning/commitmentPlans",
             "sku": {
                 "name": "DevTest",
@@ -62,7 +57,6 @@
             "dependsOn": []
         },
         {
-            "comments": "Generalized from resource: '/subscriptions/c9fdb47f-e082-46f5-9266-3305f720b4b2/resourceGroups/nitinmlwork/providers/Microsoft.MachineLearning/Workspaces/nitinworkspace'.",
             "type": "Microsoft.MachineLearning/Workspaces",
             "name": "[parameters('Workspaces_name')]",
             "apiVersion": "2016-04-01",
@@ -78,7 +72,6 @@
             ]
         },
         {
-            "comments": "Generalized from resource: '/subscriptions/c9fdb47f-e082-46f5-9266-3305f720b4b2/resourceGroups/nitinmlwork/providers/Microsoft.Storage/storageAccounts/nitinmlworkstg'.",
             "type": "Microsoft.Storage/storageAccounts",
             "sku": {
                 "name": "Standard_LRS",
@@ -113,7 +106,6 @@
             "dependsOn": []
         },
         {
-            "comments": "Generalized from resource: '/subscriptions/c9fdb47f-e082-46f5-9266-3305f720b4b2/resourceGroups/nitinmlwork/providers/Microsoft.Storage/storageAccounts/nitinworkspacestorage'.",
             "type": "Microsoft.Storage/storageAccounts",
             "sku": {
                 "name": "Standard_LRS",
