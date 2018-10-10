@@ -64,17 +64,17 @@
         {
             "comments": "Generalized from resource: '/subscriptions/c9fdb47f-e082-46f5-9266-3305f720b4b2/resourceGroups/nitinmlwork/providers/Microsoft.MachineLearning/Workspaces/nitinworkspace'.",
             "type": "Microsoft.MachineLearning/Workspaces",
-            "name": "[parameters('Workspaces_nitinworkspace_name')]",
+            "name": "[parameters('Workspaces_name')]",
             "apiVersion": "2016-04-01",
             "location": "West Europe",
             "scale": null,
             "properties": {
-                "userStorageAccountId": "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_nitinworkspacestorage_name'))]",
+                "userStorageAccountId": "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_name'))]",
                 "keyVaultIdentifierId": null,
                 "ownerEmail": "live.com#ddsaraf27@outlook.com"
             },
             "dependsOn": [
-                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_nitinworkspacestorage_name'))]"
+                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_name'))]"
             ]
         },
         {
@@ -85,7 +85,7 @@
                 "tier": "Standard"
             },
             "kind": "Storage",
-            "name": "[parameters('storageAccounts_nitinmlworkstg_name')]",
+            "name": "[parameters('storageAccounts_name')]",
             "apiVersion": "2018-07-01",
             "location": "westeurope",
             "tags": {},
@@ -120,7 +120,7 @@
                 "tier": "Standard"
             },
             "kind": "Storage",
-            "name": "[parameters('storageAccounts_nitinworkspacestorage_name')]",
+            "name": "[parameters('storageAccounts_name')]",
             "apiVersion": "2018-07-01",
             "location": "westeurope",
             "tags": {},
