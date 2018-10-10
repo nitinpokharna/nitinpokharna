@@ -8,9 +8,6 @@
         "Workspaces_name": {
             "type": "String"
         },
-        "storageAccounts_name": {
-            "type": "String"
-        },
         "commitmentPlans_name": {
             "type": "String"
         }
