@@ -8,9 +8,6 @@
         "Workspaces_name": {
             "value": "nitinmlworkspace"
         },
-        "storageAccounts_name": {
-            "value": "nitinworkspacestorage"
-        },
         "commitmentPlans_name": {
             "value": "nitinworkspacePlan"
         }
