@@ -1,0 +1,7 @@
+- name: Run Powershell Scripts
+  hosts: localhost
+  tasks:
+    - name: run a powershell script
+      script: hello.ps1
+      register: out
+    - debug: var=out
